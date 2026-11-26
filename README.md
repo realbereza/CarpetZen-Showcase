@@ -1,83 +1,82 @@
-# CarpetZen: ASMR Rug Deep Clean 🫧
+# CarpetZen: ASMR Глубокая Чистка Ковров 🫧
 
-[![Engine](https://img.shields.io/badge/Engine-Unity%206%20%7C%202022.3%20LTS-black?style=flat&logo=unity)](https://unity.com/)
-[![Platform](https://img.shields.io/badge/Platform-Mobile%20WebGL%20%2F%20HTML5-brightgreen)](https://yandex.ru/games)
-[![Target FPS](https://img.shields.io/badge/Target%20FPS-60%20FPS%20Stable-blue)](#technical-architecture)
-[![Audio](https://img.shields.io/badge/Audio-Tactile%20ASMR%20%2B%2011%20Lo--Fi%20Tracks-orange)](#audio-atmosphere)
-[![Carpet Styles](https://img.shields.io/badge/Carpet%20Collection-33%20Designs-purple)](#carpet-collection)
+[![Движок](https://img.shields.io/badge/Движок-Unity%206%20%7C%202022.3%20LTS-black?style=flat&logo=unity)](https://unity.com/)
+[![Платформа](https://img.shields.io/badge/Платформа-Mobile%20WebGL%20%2F%20HTML5-brightgreen)](https://yandex.ru/games)
+[![Производительность](https://img.shields.io/badge/FPS-Стабильные%2060%20FPS-blue)](#техническая-архитектура)
+[![Аудио](https://img.shields.io/badge/Звук-Тактильный%20ASMR%20%2B%2011%20Lo--Fi%20треков-orange)](#аудио-атмосфера)
+[![Коллекция](https://img.shields.io/badge/Ковры-33%20дизайна-purple)](#галерея-ковров)
 
-> **CarpetZen** is a tactile, oddly-satisfying casual ASMR simulation game designed from the ground up for mobile browsers and WebGL platforms. Players scrub, wash, and restore dirty carpets using responsive tools while enjoying a calming Lo-Fi audio landscape and evolving room aesthetics.
-
----
-
-## 🎮 Key Features
-
-### 1. Tactile GPU-Accelerated Scrubbing
-* **GPU SDF Mask Interpolation**: Sweeps are rendered continuously between touch points with zero gaps, regardless of touch speed or device framerate.
-* **0% CPU Pixel Overhead**: All dirt mask evaluation, blending, and foam edges run on lightweight custom shaders (`CarpetComposite.shader` & `BrushStamp.shader`).
-* **Tactile Tools**:
-  * **Round Brush (Круглая щётка)** — Balanced, cozy standard cleaning tool.
-  * **T-Scraper (Т-образный скребок)** — Wide brass blade providing +50% sweep width and accelerated clear speed.
-
-### 2. 33 Distinct Carpet Masterpieces
-Players unlock and restore a massive collection of 33 carpets:
-* **8 Procedural Base Carpets**: Clean geometric, Scandi, Berber, and garden patterns.
-* **25 High-Definition Designer Skins**: Rich cultural and artistic styles including Persian Medallion, Japanese Koi Pond, Golden Art Deco, Black Kintsugi, Anatolian Kilim, and Cyberpunk Neon.
-
-### 3. Dynamic 10-Tier Visual Progression
-Every 10 levels, the game transitions into a distinct visual palette affecting room flooring, ambient lighting, camera slates, and modal styling:
-1. **Levels 1–10**: 🩵 **Лазурный Уют** (Sky Azure & Nordic Oak) — *Tranquil starting atmosphere*
-2. **Levels 11–20**: 🌿 **Мятный Релакс** (Fresh Crisp Mint & White Birch)
-3. **Levels 21–30**: 🌅 **Теплый Закат** (Terracotta Sandstone & Sunset Peach)
-4. **Levels 31–40**: 🌙 **Лавандовые Мечты** (Smoked Lilac & Midnight Indigo)
-5. **Levels 41–50**: 🌸 **Розовый Кварц** (Pastel Sakura Rose & Rosewood)
-6. **Levels 51–60**: 🍯 **Медовый Уют** (Warm Butter Amber & Golden Oak)
-7. **Levels 61–70**: 🌊 **Глубокий Океан** (Deep Navy Sapphire & Coastal Driftwood)
-8. **Levels 71–80**: 🍵 **Матча Дзен** (Forest Moss & Japanese Bamboo)
-9. **Levels 81–90**: 🍃 **Эвкалипт и Мрамор** (Seafoam Turquoise & Carrara Marble)
-10. **Levels 91–99**: 🌌 **Звездный Космос** (Cosmic Neon Violet & Obsidian)
-* **Level 100 Centennial Milestone**: 👑 **Гранд-Мастер 100** (Imperial Royal Gold & Obsidian Aura)
-
-### 4. Interactive ASMR Audio System
-* **Velocity-Modulated Scrubbing Loop**: Organic ASMR audio pitch and volume react dynamically to real-time drag velocity.
-* **11 Harmonious Lo-Fi Soundtracks**: Smooth crossfading between tiers, with a special milestone soundtrack reserved exclusively for Level 100.
-* **Procedural Sound FX**: Bubbly pops, crystal coin chimes, star fanfare, and calming harp chords.
-
-### 5. Progression & In-Game Shop
-* **Bubble Economy (🫧)**: Earn currency for level completion and 3-star cleaning milestones.
-* **Economy Balance**: Designer rugs range from **1,500 🫧** to **75,000 🫧** for rewarding long-term player motivation.
-* **Full Progress Reset**: Dedicated safety-confirmed progress reset supporting clean restarts.
+> **CarpetZen** — расслабляющая и медитативная казуальная ASMR-игра про глубокую чистку и реставрацию ковров, созданная с нуля для мобильных браузеров и WebGL-платформ (Яндекс Игры). Игроки очищают загрязнённые ковры отзывчивыми инструментами под уютный Lo-Fi саундтрек и плавно сменяющиеся визуальные атмосферы комнат.
 
 ---
 
-## 🖼️ Carpet Gallery Preview
+## 🎮 Ключевые особенности игры
 
-| Персидский Исфахан (Persian) | Золотой Арт-Деко (Art Deco) | Карпы Кои (Japanese Koi) |
+### 1. Тактильная чистка на GPU-шейдерах
+* **SDF-интерполяция маски кисти**: линия стирания грязи просчитывается плавно и непрерывно между точками касания — без разрывов и "лесенок", даже при очень быстрых свайпах.
+* **0% нагрузки на центральный процессор**: смешивание слоёв чистого ковра, пены и маски грязи выполняется на видеокарте через оптимизированный шейдер `CarpetComposite.shader`.
+* **Инструменты с разной механикой**:
+  * 🧽 **Круглая щётка** — сбалансированный и мягкий базовый инструмент.
+  * 🪓 **Т-образный латунный скребок** — широкое лезвие с увеличенным на **+50%** радиусом очистки для быстрого прохождения.
+
+### 2. Коллекция из 33 уникальных ковров
+* **8 базовых процедурных стилей**: скандинавские, берберские, геометрические и природные паттерны.
+* **25 авторских дизайнерских ковров**: шедевры с высокой детализацией — *Персидский Исфахан, Золотой Арт-Деко, Пруд с Карпами Кои, Чёрный Кинцуги, Неоновый Киберпанк, Анатолийский Килим* и другие.
+
+### 3. Динамическая система 10 визуальных тем (Тиров)
+Каждые 10 уровней интерьер комнаты полностью преображается — меняются паркет, цвет стен, окружающий свет и оформление интерфейса:
+1. **Уровни 1–10**: 🩵 **«Лазурный Уют»** (Небесно-голубой стиль и нордический дуб) — *спокойный стартовый интерьер*
+2. **Уровни 11–20**: 🌿 **«Мятный Релакс»** (Свежая мята и белая берёза)
+3. **Уровни 21–30**: 🌅 **«Теплый Закат»** (Терракотовый песчаник и персиковый коралл)
+4. **Уровни 31–40**: 🌙 **«Лавандовые Мечты»** (Пепельная сирень и индиго)
+5. **Уровни 41–50**: 🌸 **«Розовый Кварц»** (Нежная сакура и розовое дерево)
+6. **Уровни 51–60**: 🍯 **«Медовый Уют»** (Тёплый янтарный мёд и золотой дуб)
+7. **Уровни 61–70**: 🌊 **«Глубокий Океан»** (Морской сапфир и выбеленный плавник)
+8. **Уровни 71–80**: 🍵 **«Матча Дзен»** (Лесной мох и тёмный кедр)
+9. **Уровни 81–90**: 🍃 **«Эвкалипт и Мрамор»** (Бирюзовая морская пена и белый мрамор)
+10. **Уровни 91–99**: 🌌 **«Звездный Космос»** (Неоновый фиолетовый и обсидиан)
+* **Юбилейный 100-й уровень**: 👑 **«Гранд-Мастер 100»** (Императорское золото, тёмная аура и эксклюзивный саундтрек)
+* **Для уровней 101+**: включена плавная циклическая смена тиров — интерьеры продолжают разнообразно обновляться каждые 10 уровней.
+
+### 4. Интерактивная ASMR-аудиосистема
+* **Тактильный звук трения**: громкость и высота бархатного звука чистки динамически модулируются скоростью движения пальца игрока.
+* **11 атмосферных Lo-Fi саундтреков**: плавный кроссфейд между темами, а для 100-го уровня зарезервирован специальный праздничный трек `Music_ZenCozy` (калимба и акустический эмбиент).
+* **Сочные эффекты**: мягкие щелчки лопающихся пузырей, звон золотых монет и звёздная церемония победы.
+
+### 5. Экономика и магазин
+* **Пузырьковая валюта (🫧)**: выдаётся за прохождение уровней и безупречную очистку на 3 звезды.
+* **Сбалансированная прогрессия**: цены на покупку скинов варьируются от **1 500 🫧** до **75 000 🫧**, мотивируя возвращаться в игру.
+* **Полный сброс прогресса**: безопасная кнопка подтверждения сброса, позволяющая начать путь заново с 1-го уровня.
+
+---
+
+## 🖼️ Галерея ковров
+
+| Персидский Исфахан | Золотой Арт-Деко | Пруд с Карпами Кои |
 | :---: | :---: | :---: |
-| ![Persian Isfahan](screenshots/persian_isfahan.png) | ![Art Deco Gold](screenshots/art_deco_gold.png) | ![Japanese Koi](screenshots/japanese_koi.png) |
+| ![Персидский Исфахан](screenshots/persian_isfahan.png) | ![Золотой Арт-Деко](screenshots/art_deco_gold.png) | ![Карпы Кои](screenshots/japanese_koi.png) |
 
-| Черный Кинцуги (Kintsugi) | Киберпанк Неон (Cyberpunk) | Азулежу Прованс (Azulejo) |
+| Чёрный Кинцуги | Киберпанк Неон | Азулежу Прованс |
 | :---: | :---: | :---: |
-| ![Kintsugi Gold](screenshots/kintsugi_gold.png) | ![Cyberpunk Neon](screenshots/cyberpunk_neon.png) | ![Azulejo](screenshots/mediterranean_azulejo.png) |
+| ![Чёрный Кинцуги](screenshots/kintsugi_gold.png) | ![Киберпанк Неон](screenshots/cyberpunk_neon.png) | ![Азулежу](screenshots/mediterranean_azulejo.png) |
 
 ---
 
-## 🛠️ Technical Architecture
+## 🛠️ Техническая архитектура
 
-* **Engine**: Unity 6 / Unity 2022.3 LTS
-* **Render Pipeline**: Built-in / Universal Render Pipeline (Mobile Optimized)
-* **Aspect Ratio**: Portrait 9:16 (Adaptive Canvas Scaler)
-* **Performance Benchmark**:
-  * Steady 60 FPS on mid-range Android and iOS mobile web browsers.
-  * Sub-millisecond cleanliness evaluation via periodic 32x32 CPU downsampling.
-  * Zero GC allocs during active scrubbing loops.
+* **Движок**: Unity 6 / Unity 2022.3 LTS (C#)
+* **Целевой пайплайн**: Mobile WebGL (адаптивный Canvas Scaler 9:16 Portrait)
+* **Оптимизация**:
+  * Стабильные 60 кадров/сек на мобильных браузерах (iOS Safari, Android Chrome).
+  * Мгновенный расчёт процента чистоты без лагов за счёт фонового даунсэмплинга маски до 32×32.
+  * Нулевое выделение памяти (0 GC allocs) во время непрерывной чистки.
 
 ---
 
-## 📄 Intellectual Property & Licensing
+## 📄 Авторские права и статус проекта
 
-This repository serves as a **portfolio showcase**.  
-The underlying gameplay source code, custom shaders, and commercial assets are proprietary.
+Этот репозиторий представляет собой **витрину портфолио (Showcase)**.  
+Исходный код механик, шейдеры и игровые ресурсы являются коммерческой разработкой.
 
-**Copyright (c) 2026. All rights reserved.**  
-Unauthorized reproduction, distribution, decompilation, or commercial utilization of these assets is prohibited without explicit written permission.
+**Copyright (c) 2026. Все права защищены.**  
+Копирование, распространение или коммерческое использование материалов проекта без письменного согласия правообладателя запрещено.
