@@ -50,15 +50,43 @@
 
 ---
 
-## 🖼️ Галерея ковров
+## 🖼️ Галерея авторских дизайнерских ковров (25 стилей)
 
-| Персидский Исфахан | Золотой Арт-Деко | Пруд с Карпами Кои |
+| **Сканди Бохо**<br>*Солнце и теплые арки* | **Японский Дзен**<br>*Сад камней и песок* | **Ретро 70-х**<br>*Слоистые солнечные арки* |
 | :---: | :---: | :---: |
-| ![Персидский Исфахан](screenshots/persian_isfahan.png) | ![Золотой Арт-Деко](screenshots/art_deco_gold.png) | ![Карпы Кои](screenshots/japanese_koi.png) |
+| <img src="screenshots/skin_00_boho.png" width="220" /> | <img src="screenshots/skin_01_zen.png" width="220" /> | <img src="screenshots/skin_02_retro.png" width="220" /> |
 
-| Чёрный Кинцуги | Киберпанк Неон | Азулежу Прованс |
+| **Сакура на Воде**<br>*Розовые лепестки и рябь* | **Золотая Мандала**<br>*Сакральный лотос и индиго* | **Баухаус Модерн**<br>*Геометрические блоки* |
 | :---: | :---: | :---: |
-| ![Чёрный Кинцуги](screenshots/kintsugi_gold.png) | ![Киберпанк Неон](screenshots/cyberpunk_neon.png) | ![Азулежу](screenshots/mediterranean_azulejo.png) |
+| <img src="screenshots/skin_03_sakura.png" width="220" /> | <img src="screenshots/skin_04_mandala.png" width="220" /> | <img src="screenshots/skin_05_bauhaus.png" width="220" /> |
+
+| **Тропическая Монстера**<br>*Изумрудные листья* | **Звездная Галактика**<br>*Полумесяц и созвездия* | **Морская Лагуна**<br>*Бирюзовые волны прибоя* |
+| :---: | :---: | :---: |
+| <img src="screenshots/skin_06_monstera.png" width="220" /> | <img src="screenshots/skin_07_galaxy.png" width="220" /> | <img src="screenshots/skin_08_ocean.png" width="220" /> |
+
+| **Берберский Трельяж**<br>*Овечья шерсть и ромбы* | **Персидский Исфахан**<br>*Королевский медальон* | **Изумрудный Павлин**<br>*Малахит и бархат* |
+| :---: | :---: | :---: |
+| <img src="screenshots/skin_09_berber.png" width="220" /> | <img src="screenshots/skin_10_persian.png" width="220" /> | <img src="screenshots/skin_11_peacock.png" width="220" /> |
+
+| **Золотой Арт-Деко**<br>*Эпоха Гэтсби* | **Пруд с Карпами Кои**<br>*Японский шелк* | **Небесная Астролябия**<br>*Созвездия и луна* |
+| :---: | :---: | :---: |
+| <img src="screenshots/skin_12_artdeco.png" width="220" /> | <img src="screenshots/skin_13_koi.png" width="220" /> | <img src="screenshots/skin_14_celestial.png" width="220" /> |
+
+| **Марокканский Бени Урен**<br>*Берберский уют* | **Киберпанк Неон**<br>*Синтвейв ретро* | **Версальское Барокко**<br>*Королевский гобелен* |
+| :---: | :---: | :---: |
+| <img src="screenshots/skin_15_moroccan.png" width="220" /> | <img src="screenshots/skin_16_cyberpunk.png" width="220" /> | <img src="screenshots/skin_17_baroque.png" width="220" /> |
+
+| **Черный Кинцуги**<br>*Золотые трещины* | **Тибетский Тигр**<br>*Священная охра* | **Азулежу Прованс**<br>*Португальская мозаика* |
+| :---: | :---: | :---: |
+| <img src="screenshots/skin_18_kintsugi.png" width="220" /> | <img src="screenshots/skin_19_tiger.png" width="220" /> | <img src="screenshots/skin_20_azulejo.png" width="220" /> |
+
+| **Тропическая Монстера**<br>*Джунгли и пальмы* | **Медовая Лаванда**<br>*Уютные соты* | **Сканди Баухаус**<br>*Пастельные арки* |
+| :---: | :---: | :---: |
+| <img src="screenshots/skin_21_jungle.png" width="220" /> | <img src="screenshots/skin_22_lavender.png" width="220" /> | <img src="screenshots/skin_23_scandi.png" width="220" /> |
+
+| **Анатолийский Килим**<br>*Степные ромбы* |
+| :---: |
+| <img src="screenshots/skin_24_kilim.png" width="220" /> |
 
 ---
 
